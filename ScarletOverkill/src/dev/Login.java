@@ -1,5 +1,6 @@
 package dev;
 
+import java.sql.*; 
 
 public class Login extends javax.swing.JFrame {
 
@@ -10,7 +11,7 @@ public class Login extends javax.swing.JFrame {
 	private void initComponents() {
 
 		txtUsername = new javax.swing.JTextField();
-		txtPassword = new javax.swing.JTextField();
+		txtPassword = new javax.swing.JPasswordField();
 		jLabel1 = new javax.swing.JLabel();
 		jLabel2 = new javax.swing.JLabel();
 		btnLogin = new javax.swing.JButton();
@@ -63,8 +64,13 @@ public class Login extends javax.swing.JFrame {
 		pack();
 	}
 	private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {                                      
-		// TODO add your handling code here:
-
+		
+		final String user = txtUsername.getText();
+		final String pass = txtPassword.getText();
+		
+		
+		DBConnector db = new DBConnector();
+		
 	}                                     
 
 	/**
