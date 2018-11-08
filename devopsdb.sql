@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2018 at 05:31 PM
+-- Generation Time: Nov 08, 2018 at 05:41 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -29,10 +29,17 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `user` (
-  `username` int(10) NOT NULL,
+  `username` varchar(10) NOT NULL,
   `password` varchar(15) NOT NULL,
   `isAdmin` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`username`, `password`, `isAdmin`) VALUES
+('shannon', 'password', 1);
 
 --
 -- Indexes for dumped tables
@@ -44,16 +51,7 @@ CREATE TABLE `user` (
 ALTER TABLE `user`
   ADD PRIMARY KEY (`username`),
   ADD UNIQUE KEY `username` (`username`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `username` int(10) NOT NULL AUTO_INCREMENT;COMMIT;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
