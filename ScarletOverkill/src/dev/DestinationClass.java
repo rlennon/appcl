@@ -6,7 +6,8 @@ public class DestinationClass {
 	private int numDestinations;
 	private int numPlanes;
 	private int numSpaceShips;
-	
+	private boolean capacity;
+
 	public DestinationClass(int destinationIDIn, int numDestinationsIn, int numPlanesIn, int numSpaceShipsIn)
 	{
 		destinationID = destinationIDIn;
@@ -25,9 +26,20 @@ public class DestinationClass {
 		return this.numDestinations;
 	}
 	
-	public void setNumPlanes()
+	public void setNumPlanes(int numPlanesIn)
 	{
-		this.numPlanes = 3 ;
+		if(numSpaceShipsIn > 0)
+		{
+			return "Destination can only hold planes or spaceships, not both";
+		}
+		else if(numPlanesIn > 3)
+		{
+			return "The number of planes cannot be more than 3";
+		}
+		else
+		{
+			this.numPlanes = numPlanesIn ;
+		}
 	}
 	
 	public int getNumPlanes()
@@ -35,14 +47,34 @@ public class DestinationClass {
 		return this.numPlanes;
 	}
 	
-	public void setNumSpaceShips()
+	public void setNumSpaceShips(int numSpaceShipsIn)
 	{
-		this.numSpaceShips = 2 ;
+		if(numPlanes > 0)
+		{
+			return "Destination can only hold planes or spaceships, not both";
+		}
+		else if(numSpaceShipsIn > 2)
+		{
+			return "The number of spaceships cannot be more than 3";
+		}
+		else
+		{
+			this.numSpaceShips = numSpaceShipsIn ;
+		}
 	}
 	
 	public int getNumSpaceShips()
 	{
 		return this.numSpaceShips;
+	}
+
+	public boolean atCapacity()
+	{
+		capacity = false;
+		if(numPlanes > 3 || numSpaceShips > 2)
+		{
+			capacity = true;
+		}
 	}
 	
 	public String ToString()
