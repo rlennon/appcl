@@ -70,7 +70,9 @@ public class Login extends javax.swing.JFrame {
 		
 		
 		DBConnector db = new DBConnector();
+		Wrapper conn = null;
 		
+		conn = DriverManager.getConnection(DBURL, USER, PASS);
 	}                                     
 
 	/**
