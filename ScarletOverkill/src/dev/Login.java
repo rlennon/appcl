@@ -9,7 +9,7 @@ public class Login extends javax.swing.JFrame {
 	}
 
 	private void initComponents() {
-
+		// set component variables
 		txtUsername = new javax.swing.JTextField();
 		txtPassword = new javax.swing.JPasswordField();
 		jLabel1 = new javax.swing.JLabel();
@@ -17,7 +17,7 @@ public class Login extends javax.swing.JFrame {
 		btnLogin = new javax.swing.JButton();
 
 		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
+	
 		jLabel1.setText("Username:");
 
 		jLabel2.setText("Password:");
@@ -28,7 +28,7 @@ public class Login extends javax.swing.JFrame {
 				btnLoginMouseClicked(evt);
 			}
 		});
-
+		//layout of components
 		javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
 		getContentPane().setLayout(layout);
 		layout.setHorizontalGroup(
