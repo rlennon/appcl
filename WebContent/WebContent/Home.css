@@ -1,0 +1,33 @@
+body {
+	background: #b9d0e7;
+}
+#container {
+	width: 80%;
+    margin: auto;
+    
+
+
+}
+h1 {
+    color:black;
+    font-family:  'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 { 
+    margin-left: 5%;
+    padding: 10px;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    
+}
+
+
+
+#main {
+    background: white;
+    margin-left: 10%; 
+    margin-right: 10%;
+}
