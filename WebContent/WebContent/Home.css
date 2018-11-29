@@ -24,10 +24,18 @@ h3 {
     
 }
 
+h5 { 
+    margin-left: 5%;
+    padding: 10px;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    
+}
+
 button {
-    width: 300px;
-    font-size: 17px;
-    margin-left: 40%;
+    width: 270px;
+    font-size: 13px;
     text-align: center;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
@@ -38,10 +46,15 @@ button {
     
 }
 
+
 #main {
     background: white;
     margin-left: 10%; 
     margin-right: 10%;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
 }
 
 #contents { 
