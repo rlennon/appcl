@@ -1,3 +1,4 @@
+//Plane Class
 package dev;
 
 public class Plane{
@@ -18,16 +19,19 @@ public class Plane{
 		return length;
 	}
 	
+	//get width
 	public int getWidth()
 	{
 		return width;
 	}
 	
+	//get weight
 	public int getWeight()
 	{
 		return weight;
 	}
 	
+	//destination
 	public void destination(String destinationIn)
 	{
 		this.destination = destinationIn;
