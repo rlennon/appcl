@@ -1,5 +1,7 @@
 package dev;
 
+
+
 public class DestinationClass {
 
 	private int destinationID;
@@ -7,6 +9,12 @@ public class DestinationClass {
 	private int numPlanes;
 	private int numSpaceShips;
 
+	//creating an empty destinationclass so i can test the methods
+	public DestinationClass()
+	{
+		
+	}
+	
 	public DestinationClass(int destinationIDIn, int numDestinationsIn, int numPlanesIn, int numSpaceShipsIn)
 	{
 		destinationID = destinationIDIn;

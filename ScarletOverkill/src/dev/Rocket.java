@@ -5,7 +5,7 @@ public class Rocket {
 	int length, width, weight;
 	String destination;
 	
-	
+
 	//rocket object
 	public Rocket (int lengthIn, int widthIn, int weightIn)
 	{
@@ -18,9 +18,9 @@ public class Rocket {
 	{
 		return length;
 	}
-	
+
 	public int getWidth()
-	{
+	{	
 		return width;
 	}
 	
